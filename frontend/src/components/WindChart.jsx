@@ -11,11 +11,14 @@ import {
 } from 'recharts';
 
 export const WindChart = ({ data, loading }) => {
-  if (loading) {
+  const hasData = data && data.length > 0;
+
+  // Show placeholder only on the very first load (no data yet)
+  if (!hasData && loading) {
     return <div className="chart-card chart-card--placeholder">Loading data...</div>;
   }
 
-  if (!data || data.length === 0) {
+  if (!hasData) {
     return <div className="chart-card chart-card--placeholder">No data for the selected range.</div>;
   }
 
@@ -32,7 +35,8 @@ export const WindChart = ({ data, loading }) => {
   }));
 
   return (
-    <div className="chart-card">
+    <div className={`chart-card${loading ? ' chart-card--stale' : ''}`}>
+      {loading && <div className="chart-loading-overlay">Updating...</div>}
       <ResponsiveContainer width="100%" height={400}>
         <LineChart
           data={formatted}
@@ -64,6 +68,7 @@ export const WindChart = ({ data, loading }) => {
             stroke="#4f8efa"
             strokeWidth={2}
             dot={false}
+            isAnimationActive={false}
           />
 
           <Line
@@ -73,6 +78,7 @@ export const WindChart = ({ data, loading }) => {
             stroke="#35c86a"
             strokeWidth={2}
             dot={false}
+            isAnimationActive={false}
           />
         </LineChart>
       </ResponsiveContainer>

@@ -132,6 +132,12 @@ body {
   box-shadow: 0 8px 26px rgba(34, 197, 235, 0.3);
 }
 
+.apply-button--loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
 .chart-section {
   margin-top: 0.5rem;
 }
@@ -150,6 +156,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.chart-card--stale {
+  opacity: 0.55;
+  transition: opacity 0.15s ease;
+  position: relative;
+}
+
+.chart-loading-overlay {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  color: #38bdf8;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  animation: pulse 1s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
 }
 
 .error-banner {
