@@ -15,7 +15,6 @@ app.get('/', (_req, res) => {
 app.use('/api/wind-data', windRoutes);
 
 app.listen(PORT, () => {
-  // eslint-disable-next-line no-console
   console.log(`Server listening on port ${PORT}`);
 });
 

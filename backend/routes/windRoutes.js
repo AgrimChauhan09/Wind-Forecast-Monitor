@@ -23,7 +23,6 @@ router.get('/', async (req, res) => {
 
     return res.json(data);
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error('Error in /api/wind-data route', error.message);
     return res.status(500).json({ error: 'Failed to fetch wind data' });
   }

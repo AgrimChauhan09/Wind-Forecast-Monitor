@@ -1,8 +1,6 @@
 function parseIsoDate(value) {
   if (!value) return null;
   const d = new Date(value);
-  // Invalid date check
-  // eslint-disable-next-line no-restricted-globals
   if (isNaN(d.getTime())) return null;
   return d;
 }
