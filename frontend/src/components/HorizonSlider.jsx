@@ -8,7 +8,7 @@ export const HorizonSlider = ({ value, onChange }) => {
         <input
           type="range"
           min={0}
-          max={20}
+          max={48}
           step={1}
           value={value}
           onChange={(e) => onChange(Number(e.target.value))}
