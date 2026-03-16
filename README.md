@@ -105,16 +105,18 @@ To achieve this, the project uses data from the Elexon BMRS (Balancing Mechanism
 The notebook follows a structured workflow consisting of data collection, data processing, analysis, visualization, and interpretation of results.
 
 
-**Workflow:**
+### Workflow:
 
-### 1. Data Collection
-### 2. Data Cleaning and Processing
-### 3. Forecast Error Analysis
-### 4. Historical Wind Generation Analysis
-### 5. Visualization and Results
+1. Data Collection
+2. Data Cleaning and Processing
+3. Forecast Error Analysis
+4. Historical Wind Generation Analysis
+5. Visualization and Results
 
 
 
 **Actual vs Forecast Generation Graph comparing with Application Visualization**
+![SnapShots](https://github.com/AgrimChauhan09/Wind-Forecast-Monitor/blob/main/Snapshots/application.png?raw=true)
+![SnapShots](https://github.com/AgrimChauhan09/Wind-Forecast-Monitor/blob/main/Snapshots/jb.png?raw=true)
 
 
