@@ -95,3 +95,26 @@ There are multiple ways to deploy:
 
 ---
 
+## Wind Forecast Analysis (Jupyter notebook)
+
+
+This project analyzes wind power generation data to understand how accurate wind power forecasts are and how reliably wind power can contribute to electricity demand. Wind energy is highly dependent on weather conditions, which makes forecasting difficult. Because of this uncertainty, it is important to evaluate the forecasting model and also study historical generation data to estimate how much wind power can be reliably expected.
+
+To achieve this, the project uses data from the Elexon BMRS (Balancing Mechanism Reporting Service) API, which provides both actual wind generation data and forecasted wind generation data. By comparing these datasets, the notebook evaluates forecast errors, analyzes patterns in the errors, and studies historical wind generation to estimate reliable wind capacity.
+
+The notebook follows a structured workflow consisting of data collection, data processing, analysis, visualization, and interpretation of results.
+
+
+**Workflow:**
+
+### 1. Data Collection
+### 2. Data Cleaning and Processing
+### 3. Forecast Error Analysis
+### 4. Historical Wind Generation Analysis
+### 5. Visualization and Results
+
+
+
+**Actual vs Forecast Generation Graph comparing with Application Visualization**
+
+
